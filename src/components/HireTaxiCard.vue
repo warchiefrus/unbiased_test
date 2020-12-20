@@ -161,6 +161,7 @@ export default defineComponent({
     const isConfirmDialog = ref(false)
     const closeConfirmDialog = () => {
       isConfirmDialog.value = false
+      window.open('https://unbiased.co.uk', '_blank')
     }
 
     const isAirportsLoading = ref(false)

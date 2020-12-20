@@ -10,7 +10,6 @@
           Your order is accepted.
         </div>
 
-        <a href="https://unbiased.co.uk" target="_blank">unbiased.co.uk</a>
         <v-btn class="primary mt-6 " @click="closeClick">ok</v-btn>
       </v-card-text>
     </v-card>
