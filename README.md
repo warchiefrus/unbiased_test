@@ -7,7 +7,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-use - npm run dev  insted of 'npm run serve' for start both of apollo server and vue
+on linux based system
+use - npm run dev insted of 'npm run serve' for start both of apollo server and vue
+
+or
+npm run apollo
+npm run serve
 ```
 
 ### Task Description
