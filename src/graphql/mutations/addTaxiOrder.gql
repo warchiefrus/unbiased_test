@@ -1,0 +1,3 @@
+mutation addTaxiOrder($input: TaxiOrder!) {
+  addTaxiOrder(input: $input)
+}

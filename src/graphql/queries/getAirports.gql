@@ -1,0 +1,7 @@
+query {
+  getAirports {
+    id
+    name
+    terminals
+  }
+}

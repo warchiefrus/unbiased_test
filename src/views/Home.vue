@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="hire-taxi">
+    <HireTaxiCard />
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { defineComponent, ref, computed, watch, reactive } from '@vue/composition-api'
+import HireTaxiCard from '@/components/HireTaxiCard.vue'
 
-export default {
-  name: 'Home',
+export default defineComponent({
   components: {
-    HelloWorld
+    HireTaxiCard
+  }
+})
+</script>
+
+<style lang="scss" scoped>
+.hire-taxi {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff6d7;
+  padding: 16px;
+
+  @media (max-width: 719px) {
+    & {
+      padding: 8px;
+    }
   }
 }
-</script>
+</style>

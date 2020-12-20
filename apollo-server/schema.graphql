@@ -1,0 +1,27 @@
+"Included scalars"
+scalar JSON
+scalar Upload
+
+type Airport {
+  id: String!
+  name: String!
+  terminals: [String]
+}
+
+type Query {
+  getAirports: [Airport]
+}
+
+input TaxiOrder {
+  id: String!
+  fullName: String!
+  cellphone: String!
+  arrivalDate: String!
+  airportId: String!
+  terminal: String!
+  airflightNumber: String!
+}
+
+type Mutation {
+  addTaxiOrder(input: TaxiOrder!): ID
+}
